@@ -1,0 +1,782 @@
+/** DESCRIPTION FOR WORDPRESS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Raleway:wght@100&family=Roboto:wght@100&display=swap');
+
+/*===================
+    Main Colors
+=====================*/
+:root {
+  --dark-color: black;
+  --light-dark-color: rgba(15, 13, 13, 0.842);
+  --white-color: #ccc;
+  --gray-color: rgb(100, 86, 86);
+  --aqua-color: aqua;
+  --red-color: rgb(163, 7, 7);
+  --yellow-color: yellow;
+  --green-color: rgb(30, 255, 0);
+  --padding-16: 16px;
+  --font-size-1em: 1em;
+  --font-size-1-2em: 1.2em;
+  --font-size-1-5em: 1.5em;
+  --font-size-2em: 2em;
+  --font-size-16: 16px;
+}
+
+/*===================
+    Main CSS
+=====================*/
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+  box-sizing: border-box;
+  font-size: var(--font-size-16);
+}
+
+/*===================
+    GLOBAL CSS
+=====================*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+
+h2 {
+  color: var(--aqua-color);
+  font-weight: bold;
+}
+
+.img-radius {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+/*===================
+      HEADER
+=====================*/
+
+.main__header {
+  background: var(--light-dark-color);
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.main__header .navbar-brand {
+  font-size: 3em;
+  color: var(--aqua-color);
+}
+
+.main__header a {
+  color: var(--white-color);
+  transition: color .5s linear;
+}
+
+.main__header a:hover {
+  color: var(--gray-color);
+}
+
+.main__header a.active {
+  color: var(--aqua-color);
+}
+
+.main__header nav .navbar-collapse {
+  font-size: 1.3em;
+}
+
+/*===================
+    FOOTER
+=====================*/
+footer {
+  padding: var(--padding-16);
+  background: var(--dark-color);
+}
+
+footer .brand {
+  color: var(--aqua-color);
+  font-size: var(--font-size-2em);
+  text-decoration: none;
+}
+
+footer ul {
+  padding: 12px;
+}
+
+footer ul li {
+  margin-left: 10px;
+  font-size: var(--font-size-1-2em);
+}
+
+footer ul li a {
+  color: var(--white-color);
+  text-decoration: none !important;
+  transition: color .5s linear;
+}
+
+footer ul li a:hover {
+  color: var(--aqua-color);
+}
+
+footer ul li .sign {
+  color: var(--red-color);
+}
+
+footer ul li a.active {
+  color: var(--aqua-color);
+}
+
+footer .author {
+  padding: 10px;
+  font-size: var(--font-size-1em);
+}
+
+footer .author span {
+  margin-left: 5px;
+  color: var(--white-color);
+  font-size: var(--font-size-16);
+}
+
+/*===========================================
+              HOME
+=============================================*/
+
+/*===================
+      HERO
+=====================*/
+.hero__wrapper {
+  background: url('assets/img/beach.jpg') center center no-repeat;;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 14px;
+}
+
+.hero__wrapper .hero__text {
+  background: rgb(10, 6, 6);
+  padding: var(--padding-16);
+  color: var(--white-color);
+}
+
+.hero__wrapper .hero__text h2 {
+  color: var(--aqua-color);
+}
+
+.hero__wrapper .hero__text .btn {
+  font-size: var(--font-size-2em);
+}
+
+
+.hero__wrapper .hero__logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.hero__wrapper #price-timeline .price {
+  font-size: var(--font-size-1-2em);
+}
+
+.hero__wrapper #price-timeline .price.active {
+  background: var(--red-color);
+  color: var(--white-color);
+}
+
+.hero__wrapper #price-timeline .price  h4 {
+  color: var(--aqua-color);
+}
+
+.hero__wrapper #price-timeline .price  span {
+  font-weight: bold;
+  font-size: var(--font-size-1-2em);
+}
+
+/*===================
+      OPT IN
+=====================*/
+.opt__in {
+  background: var(--dark-color);
+  padding: var(--padding-16);
+}
+
+.opt__in p {
+  color: var(--white-color);
+  font-weight: bold;
+}
+
+.opt__in p strong {
+  color: var(--gray-color);
+}
+
+.opt__in button {
+  font-size: var(--font-size-1-2em);
+}
+
+/*===================
+      BOOST INCOME
+=====================*/
+.boost__income {
+  padding: var(--padding-16);
+}
+
+.boost__income h2, h4 {
+  font-size: var(--font-size-2em);
+  font-weight: bold;
+}
+
+.boost__income p {
+  font-size: var(--font-size-1-2em);
+  text-align: justify;
+}
+
+/*===================
+      BENIFITS
+=====================*/
+.benifits {
+  padding: var(--padding-16);
+}
+
+.benifits h4 {
+  color: var(--gray-color);
+}
+
+/*===================
+      COURSE
+=====================*/
+.course__features {
+  background: var(--dark-color);
+  color: var(--white-color);
+  padding: var(--padding-16);
+}
+
+.ci {
+  font-size: var(--font-size-2em);
+}
+
+/*===================
+      PROJECTS
+=====================*/
+.project__features {
+  padding: var(--padding-16);
+  background: var(--yellow-color);
+}
+
+.project__features--item {
+  text-align: center;
+  width: 100%
+}
+
+.project__features--item img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+/*===================
+      VIDOE
+=====================*/
+.vidoe__feature {
+  padding: var(--padding-16);
+}
+
+/*===================
+      INSTRUCTOR
+=====================*/
+.instructor {
+  padding: var(--padding-16);
+}
+
+.instructor .instructo--background {
+  background: url('assets/img/instructor.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.instructor a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--dark-color);
+  width: 50px;
+  height: 50px;
+  margin-left: 5px;
+  transition: all .5s linear;
+}
+
+.instructor .twitter:hover {
+  background: var(--dark-color);
+  color: var(--aqua-color);
+}
+
+.instructor .linkedin:hover {
+  background: var(--dark-color);
+  color: #52abd5;
+}
+
+.instructor .github:hover {
+  background: var(--dark-color);
+  color: var(--gray-color);
+}
+
+.instructor h3 {
+  color: var(--red-color);
+  font-weight: bold;
+}
+
+.instructor .num .num-content  {
+  background: var(--dark-color);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  color: var(--white-color);
+  border: 1px dashed var(--aqua-color);
+}
+
+/*===================
+      TESTIMONIALS
+=====================*/
+
+.testimonials .img-container {
+  width: 100px;
+  height: 100px;
+}
+
+.testimonials .img-container img {
+  border-radius: 50%;
+}
+
+.testimonials .quote {
+  color: var(--gray-color);
+}
+
+
+/*===================
+      SIGNUP
+=====================*/
+.signup {
+  padding: var(--padding-16);
+  background: url('assets/img/airplain.jpg') no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+.signup h2 {
+  color: var(--dark-color);
+}
+
+.signup h2 span {
+  color: var(--aqua-color);
+  font-weight: bold;
+}
+
+.signup button {
+ font-size: var(--font-size-1-2em);
+}
+
+/*===========================================
+              BLOG
+=============================================*/
+
+/*============================
+    SUBSCRIBE MAILING
+==============================*/
+.subscribe__mailing {
+  margin-top: 3em;
+  padding: var(--padding-16);
+}
+
+.subscribe__mailing .form-group {
+  width: 60%;
+}
+
+.subscribe__mailing .form-group input {
+  width: 100%;
+  margin-right: 10px;
+  border-radius: 20px 0 0 20px;
+}
+
+.subscribe__mailing .btn {
+  width: 40%;
+  border-radius: 0 20px 20px 0;
+  border: 1px dashed var(--white-color);
+}
+
+/*============================
+    HERO BLOG
+==============================*/
+.hero__blog {
+  padding: var(--padding-16);
+  background: url('assets/img/beach.jpg') no-repeat;
+  background-size: cover;
+  height: 200px;
+}
+
+.hero__blog h2 {
+  color: var(--dark-color);
+  font-size: 3em;
+  font-weight: bold;
+}
+
+/*============================
+    POSTS
+==============================*/
+.posts {
+  margin-top: 3em;
+}
+
+.posts .author__info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.posts .post {
+  padding: var(--padding-16);
+}
+
+.posts .post .post__title {
+  color: var(--dark-color);
+}
+
+.posts .post .poster {
+  width: 100%;
+  height: 300px;
+}
+
+.posts .post .author__info > a{
+  margin-left: 5px;
+}
+
+.posts .post .author__info .author__info--name {
+  color: var(--red-color);
+}
+
+/*============================
+    HERO POST
+==============================*/
+.hero__post {
+  padding: var(--padding-16);
+  background: url('assets/img/design-02.jpg') no-repeat;
+  background-size: cover;
+  height: 200px;
+}
+
+.hero__post h2 {
+  color: var(--dark-color);
+  font-size: var(--font-size-2em);
+  font-weight: bold;
+}
+
+/*============================
+    POST
+==============================*/
+.post {
+  margin: 3em;
+}
+
+.post h2 {
+  color: var(--dark-color);
+}
+
+.post .author__info > a{
+  margin-left: 5px;
+}
+
+.post .author__info .author__info--name {
+  color: var(--red-color);
+}
+
+.post .author__info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+/*============================
+    COMMENTS FORM
+==============================*/
+.comments__form {
+  margin: 3em;
+}
+
+/*============================
+    COMMENTS
+==============================*/
+.comments {
+  margin: 3em;
+}
+
+.comments h2 {
+  font-size: var(--font-size-1-2em);
+  color: var(--dark-color);
+}
+
+.comments .post__wrapper {
+  border: 1px solid var(--white-color);
+  padding: 16px 7px;
+  box-shadow: 0 5px 7px var(--white-color);
+}
+
+.comments .post__wrapper .comment-icon {
+  color: var(--gray-color);
+  margin-right: 5px;
+}
+
+.comments .responses .author__comment--info {
+  border: 1px solid var(--white-color);
+  padding: var(--padding-16);
+  box-shadow: 0 5px 7px var(--white-color);
+}
+
+.comments .responses .author__comment--info .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.comments .responses .author__comment--info .info {
+  height: 100px;
+}
+
+.comments .responses .reply {
+  border: 1px dashed var(--yellow-color);
+  padding: var(--padding-16);
+  margin-right: 2em;
+}
+
+/*=================================================
+                MEDIA QUERIES
+===================================================*/
+
+/*===================
+    SMALL SCREEN
+=====================*/
+
+@media(max-width:500px) {
+  h2{
+    color: var(--red-color);
+    font-size: var(--font-size-1-2em);
+    font-weight: bold;
+  }
+
+  /*===================
+      HERO
+  =====================*/
+
+  .hero__wrapper .hero__text h2 {
+    font-size: 1.6em;
+    font-weight: bold;
+
+  }
+
+  #price-timeline {
+    display: block !important;
+  }
+
+  #price-timeline .price{
+    font-size: var(--font-size-1em);
+    text-align: center;
+  }
+
+  #price-timeline .price h4 {
+    font-size: var(--font-size-1em);
+  }
+
+  .hero__wrapper .btn {
+    font-size: var(--font-size-1-2em) !important;
+  }
+
+  /*===================
+      OPT IN
+  =====================*/
+  .opt__in p {
+    font-size: var(--font-size-1em) !important;
+    color: red;
+  }
+
+  /*===================
+      BOOST INCOME
+  =====================*/
+  .boost__income p {
+    font-size: var(--font-size-1-2em);
+  }
+
+  .boost__income h4 {
+    font-size: var(--font-size-1em);
+    color: var(--red-color);
+    font-weight: bold;
+  }
+
+  /*===================
+      BENIFITS
+  =====================*/
+  .benifits h4 {
+    color: var(--red-color);
+    font-size: var(--font-size-1em);
+  }
+
+  /*===================
+      COURSE
+  =====================*/
+  .course__features h2 {
+    color: var(--red-color);
+    font-size: var(--font-size-1-5em);
+  }
+
+  /*===================
+      PROJECTS
+  =====================*/
+ .project__features h2 {
+    color: var(--red-color);
+    font-size: var(--font-size-1-5em);
+  }
+
+  /*===================
+      INSTRUCTOR
+  =====================*/
+  .instructor h3 {
+    color: var(--red-color);
+    font-size: var(--font-size-1-2em);
+    font-weight: bold;
+  }
+
+  /*===================
+      TESTIMONIALS
+  =====================*/
+  .testimonials .avatar__wrapper {
+    height: 100px;
+  }
+
+  .testimonials .avatar__wrapper .img-container{
+    width: 100%;
+    text-align: center !important;
+  }
+
+  .testimonials .avatar__wrapper .img-container img{
+    width: 100px;
+    height: 100px;
+    text-align: center !important;
+  }
+
+  .testimonials .quote {
+    font-size: var(--font-size-1em);
+  }
+
+  /*===========================================
+              POST
+  =============================================*/
+
+  /*============================
+    HERO POST
+  ==============================*/
+  .hero__post h2 {
+    font-size: var(--font-size-1-2em);
+  }
+
+  /*============================
+    SUBSCRIBE MAILING
+  ==============================*/
+  .subscribe__mailing .form-inline {
+    display:block;
+  }
+
+  .subscribe__mailing .form-inline input,  .subscribe__mailing .form-inline .btn{
+    border-radius: 0;
+    display:block;
+  }
+
+  .subscribe__mailing .form-inline input {
+    width: 100%;
+  }
+
+
+  /*============================
+    COMMENTS
+  ==============================*/
+  h2, h3 {
+    font-size: var(--font-size-1-2em);
+  }
+
+  p {
+    text-align: center;
+    font-size: var(--font-size-1em);
+  }
+
+  .comments .reply {
+    margin: 0;
+  }
+
+  .comments .post__info h2 {
+    font-size: var(--font-size-1em);
+  }
+
+  .comments .responses .author__comment--info .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  /*===================
+    FOOTER
+  =====================*/
+  footer {
+    display: block;
+    text-align: center;
+  }
+
+  footer .brand {
+    font-size: 1.7em;
+  }
+
+  footer ul li a {
+    font-size: var(--font-size-16);
+  }
+
+  /*===================
+      MODAL
+  =====================*/
+  .modal .modal-title {
+    font-size: var(--font-size-1em);
+  }
+
+  .modal form {
+    display: block !important;
+  }
+}
+
+/*===================
+    MEDIUM SCREEN
+=====================*/
+
+@media(max-width:768px) {
+  /*===================
+      VIDOE
+  =====================*/
+  .vidoe__feature h2{
+    font-size: 1.7em;
+  }
+
+  /*===================
+      PROJECTS
+  =====================*/
+  .project__features h4 {
+    font-size: var(--font-size-1-5em);
+  }
+
+  /*===================
+      INSTRUCTOR
+  =====================*/
+  .testimonials h2{
+    font-size: var(--font-size-1-5em);
+  }
+
+  /*===========================================
+              POST
+  =============================================*/
+
+  /*============================
+    HERO POST
+  ==============================*/
+  .hero__post h2 {
+    font-size: var(--font-size-1-2em);
+  }
+}
+
